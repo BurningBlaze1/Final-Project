@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Wendy+One&display=swap');
+/*Title Text*/
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+/*Paragraph Text*/
+
+body {
+    font-family: 'Jersey 15', 'sans-serif';
+
+    --bgcolor: black;
+    --primarycolor: rgb(42, 15, 61);
+    --textcolor: white;
+    --textcolor2: rgb(240, 240, 60);
+
+    background-color: var(--bgcolor);
+    background-image: url('/images/bg1.png');
+    background-size: 100px;
+    background-repeat: repeat;
+}
+
+p {
+    color: var(--textcolor);
+    font-size: 40px;
+    font-family: 'Jersey 15', 'sans-serif';
+    text-align: center;
+}
+
+footer{
+    font-size: 30px;
+    color:var(--textcolor);
+    background-color: var(--primarycolor);
+    text-align: right;
+}
+
+h1 {
+    color: var(--textcolor2);
+    font-size: 85px;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: var(--primarycolor);
+    border-radius: 50px;
+    max-width: fit-content;
+}
+
+h2 {
+    color: var(--textcolor);
+    font-size: 45px;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+}
+
+.firstimg {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    place-content: center;
+    max-width: 1000px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.firsttextbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--primarycolor);
+    margin: auto;
+    margin-bottom: 100px;
+    /* margin-left:60px;
+    margin-right:60px; */
+    padding: 15px;
+}
+
+.firsttextbox>p {
+    margin: auto;
+    max-width: 1300px;
+}
+
+.gamestogoover {
+    background-color: var(--primarycolor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 50px;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+.gamestogoover>h2 {
+    grid-column: span 2;
+}
+
+.gamestogooverdescription {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.gamesection {
+    margin: auto;
+    max-width: 1100px;
+    margin-bottom: 100px;
+}
+
+.gamesection>h2 {
+    font-size: 60px;
+}
+
+.titlegamelabel {
+    text-align: left;
+    font-size: 60px;
+}
+
+.gamename {
+    font-size: 75px;
+    padding: 10px;
+}
+
+.gamedesc {
+    margin-bottom: 50px;
+}
+
+.gameimage {
+    padding: 15px;
+}
+
+.mechanicsgrid {
+    background-color: var(--primarycolor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    margin-bottom:50px;
+    padding:15px;
+    gap: 25px;
+    max-width:1500px;
+}
+
+.carouselimg{
+    padding:20px;
+}
