@@ -1,0 +1,155 @@
+nav {
+ background-image: linear-gradient(white, #bababa);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
+border-color: white;
+border-style: outset;
+border-width: 1.2vw;
+margin-left: 2vw;
+margin-right: 2vw;
+outline: 3px groove black;
+border-radius: 30px;
+ padding-top: 50px;
+
+}
+
+.nava {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin:10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nava:hover {
+  color: #d0b5ff;
+  background-color: #555555;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nava.active {
+  background-color: #ffffff;
+  color: #5b5585;
+}
+
+@media screen and (max-width: 768px) {
+  .nava {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .nava {
+    margin: 5px 0;
+  }
+}
+ 
+
+body{
+ background-image: url("../images/sky.png"), url("../images/sky_43.png");
+  background-repeat: no-repeat;
+ background-color: white;
+  background-size: 100vw 60vw;
+background-attachment: fixed;
+}
+
+.mbigtext {
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  font-size: 12vw; 
+  color: #004ddb;
+ text-shadow: 6px 6px 7px #000000;
+}
+
+.mheader{
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  font-size: 6vw; 
+  color: #004ddb;
+ text-shadow: 2px 2px 5px #000000;
+}
+
+
+//@mesdia (max-width: 1768px) {
+  .mbigtext {
+    margin: 10px;
+  }
+}
+
+
+.left {
+  float: left;
+} 
+
+.right {
+  float: right;
+} 
+
+
+.mboxbig {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
+text-align: center;
+ background-image: linear-gradient(white, #bababa);
+border-color: white;
+border-style: outset;
+border-width: 1.2vw;
+margin-left: 7vw;
+margin-right: 7vw;
+outline: 3px groove black;
+border-radius: 20px;
+}
+
+.mbox {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
+text-align: center;
+background-color: #ededed;
+border-color: white;
+border-style: outset;
+border-width: 10px;
+outline: 3px groove black;
+width: 35vw;
+height: 30vw;
+margin: 3vw;
+}
+
+.city {
+
+
+  z-index: -1;
+  height: 1vw;
+  width: 90vw;
+
+  position: absolute;
+  top: 290px;
+  left: 200;
+} 
+
+
+.mboxl {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.3em;
+color: #0043bf;
+text-align: left;
+padding-left: 1vw;
+border-color: #0043bf;
+border-width: 10px;
+border-left-style: outset;
+border-radius: 8px;
+width: 35vw;
+height: 30vw;
+margin: 3vw;
+}
