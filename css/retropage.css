@@ -122,6 +122,8 @@ h2 {
     margin: auto;
     max-width: 1100px;
     margin-bottom: 100px;
+    position: relative;
+    overflow-x: hidden;
 }  
 
 .gamesection>h2 {
@@ -260,7 +262,7 @@ h2 {
 }
 
 .sonicbackground {
-    animation: sonicbackground 8s 3s linear infinite;
+    animation: sonicbackground 10s 3s linear infinite;
 }
 
 @keyframes sonicbackground {
@@ -274,7 +276,7 @@ h2 {
 }
 
 .flowers {
-    animation: flowers 6s 3s linear infinite;
+    animation: flowers 7s 3s linear infinite;
 }
 
 @keyframes flowers {
@@ -287,10 +289,17 @@ h2 {
     }
 }
 
+.sonic{
+    max-width:7em;
+    position:absolute;
+    left: 30%;
+    bottom:31%;
+    height: 23%;
+}
 
-
-
-
+.sonicbox{
+    position:relative;
+}
 
 @media screen and (width <=1100px) {
     .mechanicsgrid {
