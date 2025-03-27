@@ -207,11 +207,85 @@ h2 {
     }
 }
 
+.curtain{
+    position:absolute;
+    width:857px;
+    transform: translate(500px, 0px);
 
 
+    animation: curtains 3s ease-in-out infinite alternate;
+}
+
+@keyframes curtains {
+    from {
+        transform: translate(1400px, 0px);
+    }
+
+    to {
+        transform: translate(500px, 0px);
+    }
+}
+
+.curtain2{
+    position:absolute;
+    width:857px;
+    transform: translate(-350px, 0px);
 
 
+    animation: curtains2 3s ease-in-out infinite alternate;
+}
 
+@keyframes curtains2 {
+    from {
+        transform: translate(-1200px, 0px);
+    }
+
+    to {
+        transform: translate(-350px, 0px);
+    }
+}
+
+.grass {
+    animation: grass 3s 3s linear infinite;
+}
+
+@keyframes grass {
+    from {
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(-10px, 0px);
+    }
+}
+
+.sonicbackground {
+    animation: sonicbackground 8s 3s linear infinite;
+}
+
+@keyframes sonicbackground {
+    from {
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(-8px, 0px);
+    }
+}
+
+.flowers {
+    animation: flowers 6s 3s linear infinite;
+}
+
+@keyframes flowers {
+    from {
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(-10px, 0px);
+    }
+}
 
 
 
