@@ -168,6 +168,7 @@ h2 {
 }
 
 .gamestogoover {
+    margin:auto;
     background-color: var(--primarycolor);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,6 +181,10 @@ h2 {
     max-width: 1200px;
     border-radius: 10px;
     border: solid .5vh yellow;
+}
+
+.gamestogoover>image{
+    margin:auto;
 }
 
 .gamestogoover>h2 {
@@ -332,7 +337,7 @@ animation: curtains2 3s ease-in-out infinite alternate;
 .gamestogooverline{
     background-color: white;
     height: 4px;
-    width: 650px;
+    max-width: 650px;
     margin: -5px auto 30px;
 }
 
