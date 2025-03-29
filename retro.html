@@ -70,17 +70,17 @@
     <div class="mechanicsgrid">
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/dkfeature1.jpg">
             <p>Mechanic 1</p>
         </div>
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/dkfeature2.jpeg">
             <p>Mechanic 2</p>
         </div>
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/dkfeature3.jpg">
             <p>Mechanic 3</p>
         </div>
 
@@ -167,28 +167,31 @@
     <div class="mechanicsgrid">
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/sonicfeature1.jpg">
             <p>Mechanic 1</p>
         </div>
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/sonicfeature2.png">
             <p>Mechanic 2</p>
         </div>
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/sonicfeature3.jpg">
             <p>Mechanic 3</p>
         </div>
 
     </div>
 
-    <div class="gamesection">
-
+    <!-- <div class="gamesection"> -->
         <h2>Gallery</h2>
 
-        <img class="carouselimg" src="images/retrogames.avif">
-    </div>
+        <div id="carousel2" class="carousel">
+        <img class="carouselimg2" src="images/soniccarouselimg1.webp" alt="">
+        <img class="carouselimg2" src="images/soniccarouselimg2.jpg" alt="">
+        <img class="carouselimg2" src="images/soniccarouselimg3.png" alt="">
+        </div>
+    <!-- </div> -->
 
 
 
@@ -199,10 +202,10 @@
 
         <div class="separator"></div>
 
-        <img class="curtain" src="images/curtain.jpg">
-        <img class="curtain2" src="images/curtain.jpg">
+        <!-- <img class="curtain" src="images/curtain.jpg">
+        <img class="curtain2" src="images/curtain.jpg"> -->
 
-        <img class="gameimage" src="images/donkeykongmain.png">
+        <img class="gameimage" src="images/konmain.jpg">
 
         <p class="gamedesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ex nobis aperiam error
             quo ipsam rerum
@@ -212,17 +215,17 @@
     <div class="mechanicsgrid">
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/konfeature1.jpg">
             <p>Mechanic 1</p>
         </div>
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/konfeature2.jpg">
             <p>Mechanic 2</p>
         </div>
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/konfeature3.jpg">
             <p>Mechanic 3</p>
         </div>
 
@@ -231,11 +234,42 @@
     <div class="gamesection">
 
         <h2>Gallery</h2>
+        
+        <img id="curtain" class="curtain" src="images/curtain.jpg">
+        <img id="curtain2" class="curtain2" src="images/curtain.jpg">
 
-        <img class="carouselimg" src="images/retrogames.avif">
+        <!-- <img id="carouselimg3test" class="carouselimg3main" src="images/konoutfitoriginal.jpg" alt="">
+        <img id="carouselimg3test2" class="carouselimg3main" src="images/konoutfitcoat.webp" alt=""> -->
+
+        <div id="carousel3" class="koncarousel">
+        <img id="koncarouselimg1" class="koncarouselimg1" src="images/konoutfityukata.webp" alt="">
+        <img id="koncarouselimg2" class="koncarouselimg2" src="images/konoutfitcoat.webp" alt="">
+        <img id="koncarouselimg3" class="koncarouselimg3" src="images/konoutfitsunglasses.jpg" alt="">
+        <img id="koncarouselimg4" class="koncarouselimg4" src="images/konoutfitoriginal.jpg" alt="">
+
+        </div>
+
+        <div class="konbutton">
+
+            <button onclick="ToggleOutfit1()">
+                <span id="btnoutfit1" class="material-symbols-outlined">1</span>
+            </button>
+
+            <button onclick="ToggleOutfit2()">
+                <span id="btnoutfit2" class="material-symbols-outlined">2</span>
+            </button>   
+            
+            <button onclick="ToggleOutfit3()">
+                <span id="btnoutfit3" class="material-symbols-outlined">3</span>
+            </button>
+            
+            <button onclick="ToggleOutfit4()">
+                <span id="btnoutfit4" class="material-symbols-outlined">4</span>
+            </button>
+        
+        </div>
+
     </div>
-
-
 
 
     <div class="gamesection">
@@ -245,7 +279,7 @@
 
         <div class="separator"></div>
 
-        <img class="gameimage" src="images/donkeykongmain.png">
+        <img class="gameimage" src="images/qbertmain.jpg">
 
         <p class="gamedesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ex nobis aperiam error
             quo ipsam rerum
@@ -255,17 +289,17 @@
     <div class="mechanicsgrid">
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/qbertfeature1.png">
             <p>Mechanic 1</p>
         </div>
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/qbertfeature2.jpg">
             <p>Mechanic 2</p>
         </div>
 
         <div class="mechanicsection">
-            <img src="images/retrogames.avif">
+            <img src="images/qbertfeature3.jpg">
             <p>Mechanic 3</p>
         </div>
 
@@ -279,6 +313,7 @@
     </div>
 
     <script src="scripts/carousel.js"></script>
+    <script src="scripts/buttons.js"></script>
 
 </body>
 
