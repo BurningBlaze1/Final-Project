@@ -10,7 +10,6 @@ function ToggleOutfit1() {
         koncarouselimg2.classList.add('hidden')
         koncarouselimg3.classList.add('hidden')
         koncarouselimg4.classList.add('hidden')
-        curtain.classlist.add('konanimation1')
          document.getElementById('btnoutfit2').innerText = 'off'
          document.getElementById('btnoutfit3').innerText = 'off'
          document.getElementById('btnoutfit4').innerText = 'off'

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+body{
+    background-color: #e6f7f5;
+ 
+    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #e6f7f5 34px ), repeating-linear-gradient( #1f6eff55, #1f6eff );
+    margin-bottom:200px;
+    animation: bg 30s linear infinite alternate;
+}
+
+h1{
+    /* opacity:0%; */
+    text-align: center;
+    margin:auto;
+    font-size:80px;
+    font-family: 'Aldrich', 'sans-serif';
+    /* border: 2px solid rgb(100,100,255,0.2); */
+    animation: enter 3s ease-in 1;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes enter {
+    from {
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 40px #1f6eff55;
+    }
+    to {
+      text-shadow: 0 0 50px white, 0 0 20px white;
+    }
+  }

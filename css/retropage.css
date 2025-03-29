@@ -17,6 +17,58 @@ body {
     background-repeat: repeat;
 }
 
+nav {
+    font-family: 'Jersey 15', 'sans-serif';
+    font-size:50px;
+    background-image: linear-gradient(var(--primarycolor), var(--bgcolor));
+     text-align: center;
+     gap:100px;
+   border-color: var(--textcolor2);
+   border-width: 1.2vw;
+   outline: 3px groove black;
+    border-bottom: var(--textcolor2) solid 5px;
+   }
+   
+   .nava {
+     color: #ffffff;
+     text-decoration: none;
+     padding: 10px 20px;
+     display: inline-block;
+     margin:10px;
+     transition: background-color 0.3s ease;
+   }
+   
+   .nava:hover {
+     color: #d0b5ff;
+     background-color: #555555;
+     border-radius: 4px;
+     transition: background-color 0.3s ease;
+   }
+   
+   .nava.active {
+     background-color: #ffffff;
+     color: #5b5585;
+   }
+   
+   @media screen and (max-width: 768px) {
+     .nava {
+       font-size: 14px;
+       padding: 8px 16px;
+     }
+   }
+   
+   @media screen and (max-width: 480px) {
+     nav {
+       flex-direction: column;
+       align-items: center;
+       padding: 15px;
+     }
+   
+     .nava {
+       margin: 5px 0;
+     }
+   }
+
 p {
     color: var(--textcolor);
     font-size: 40px;
@@ -34,19 +86,49 @@ footer {
 
 h1 {
     color: var(--textcolor2);
-    font-size: 85px;
+    font-size: 95px;
     font-family: 'Pixelify Sans', sans-serif;
-    text-align: center;
+    /* text-align: center;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
     padding-left: 35px;
     padding-right: 35px;
     background-color: var(--primarycolor);
-    border-radius: 50px;
-    max-width: fit-content;
-    border: solid .5vh yellow;
+    border-radius: 50px; */
+    /* max-width: fit-content;
+    border: solid .5vh yellow; */
+
+    margin:auto;
+    margin-top:50px;
+    text-align: center;
+    position: relative;
+    letter-spacing: 7px;
+    overflow: hidden;
+    border-right: 4px solid var(--textcolor2);
+    white-space: nowrap;
+    animation: typewriter 3s steps(24) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
 }
+
+
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 710px;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: var(--textcolor2)(0, 0%, 80%);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
 
 h2 {
     color: var(--textcolor);
@@ -403,8 +485,20 @@ animation: curtains2 3s ease-in-out infinite alternate;
     height:150px;
 }
 
+.konbutton button:hover{
+    cursor:pointer;
+}
+
 .carousel3{
 z-index:-10;
+}
+
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 
