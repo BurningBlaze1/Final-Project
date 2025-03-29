@@ -63,8 +63,9 @@ body{
  background-image: url("../images/sky.png"), url("../images/sky_43.png");
   background-repeat: no-repeat;
  background-color: white;
-  background-size: 100vw 60vw;
+  background-size: 100vw 160vw;
 background-attachment: fixed;
+ position: relative;
 }
 
 .mbigtext {
@@ -78,11 +79,20 @@ background-attachment: fixed;
 .mheader{
   font-family: 'Helvetica', sans-serif;
   text-align: center;
+margin:auto;
   font-size: 6vw; 
   color: #004ddb;
  text-shadow: 2px 2px 5px #000000;
 }
 
+.lheader{
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+margin:auto;
+  font-size: 3vw; 
+  color: #004ddb;
+ text-shadow: 2px 2px 5px #000000;
+}
 
 //@mesdia (max-width: 1768px) {
   .mbigtext {
@@ -111,6 +121,7 @@ margin-left: 7vw;
 margin-right: 7vw;
 outline: 3px groove black;
 border-radius: 20px;
+opacity:1;
 }
 
 .mbox {
@@ -152,4 +163,191 @@ border-radius: 8px;
 width: 35vw;
 height: 30vw;
 margin: 3vw;
+}
+
+.//logo {
+display: block;
+margin: auto;
+width: 80vw;
+height: 30vw;
+margin-top: 50px;
+}
+
+
+.water {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+
+}
+
+.ink {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 190vw;
+  z-index: 9999;
+}
+
+
+.mario {
+  opacity: 0;
+  position: absolute;
+  left: 100%;
+  top: 195vw;
+  z-index: 9999;
+}
+
+.animate-mario{
+  animation: mario 2s forwards;
+}
+.animate-ink{
+  animation: ink 2s forwards;
+}
+
+@keyframes mario {
+  0% {
+   left: -700%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes ink {
+  0% {
+    left: 700%;
+    opacity: 0;
+  }
+  100% {
+    left: 50%; 
+    opacity: 1;
+  }
+}
+
+.gamebg {
+  position: absolute;
+  top: 1000;
+  left: 0;
+  height: 80vw;
+  width: 100vw;
+  z-index: -2;
+  transition: opacity 0.5s ease, visibility 0s 0.5s; 
+outline: 3px groove black;
+border-radius: 20px;
+}
+
+//.visible-gamebg {
+  opacity: 1;
+  visibility: visible; 
+  transition: opacity 0.5s ease, visibility 0s 0s; o
+}
+
+.detector{
+}
+
+#slud.mboxl{
+margin-top:480px
+
+}
+
+.spin-text {
+    text-shadow: 
+        1px 1px 0px #e63946, 
+        2px 2px 0px #f77f00, 
+        3px 3px 0px #fcbf49, 
+        4px 4px 0px #a8dadc, 
+        5px 5px 0px #457b9d;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    animation: spin-3d 4s infinite linear;
+}
+
+@keyframes spin-3d {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.im{
+object-fit: cover;
+width: 33vw;
+height: 28vw;
+
+}
+
+.banner{
+object-fit: cover;
+width: 43vw;
+height: 28vw;
+
+}
+
+@keyframes glow {
+  0%,100%{ text-shadow:0 0 30px red; }
+  25%{ text-shadow:0 0 30px orange; }
+  50%{ text-shadow:0 0 30px forestgreen; }
+  75%{ text-shadow:0 0 30px cyan; }
+}
+
+#t{
+height: 25vw;
+width: 80vw;
+}
+
+.grad{
+height:10vw;
+width: 200vw;
+border: 20px;
+  z-index: -1;
+background: linear-gradient(to bottom, rgba(14,0,255,0) 0%, rgba(0,0,255,1) 53%, rgba(0,212,255,0) 100%);
+}
+
+
+.eye {
+  position: absolute;
+  pointer-events: none; 
+}
+
+.eyecont{
+
+  position: relative;
+  overflow: hidden;
+}
+
+.bunyop {
+    top: 362px; 
+    left: 120px; 
+    width: 60px; 
+    height: 60px; 
+    position: absolute; 
+    pointer-events: none; 
+    z-index: 9999; 
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -30px);
+  }
+  100% {
+    transform: translate(-30px, 1000px); 
+  }
+}
+
+.jump {
+  display: inline-block;
+  animation: jump 1s ease-in-out; 
+
 }
