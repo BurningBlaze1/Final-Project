@@ -119,6 +119,7 @@ h1 {
     }
     to {
       width: 710px;
+      /* width: 50vw; */
     }
   }
   @keyframes blinkTextCursor {
@@ -523,9 +524,26 @@ z-index:-10;
     .titlegamelabel {
         font-size: 60px;
     }
+
+    .konbutton {
+        grid-template-columns: 1fr 1fr;
+        margin-left:150px;
+        margin-right:150px;
+    }
 }
 
 @media screen and (width <=700px) {
+
+    h1{
+        font-size: 40px;
+        margin-left:40px;
+    }
+
+    .konbutton {
+        grid-template-columns: 1fr 1fr;
+        margin-left:none;
+        margin-right:none;
+    }
 
     .gamestogoover {
         grid-template-columns: 1fr;

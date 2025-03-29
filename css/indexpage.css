@@ -15,10 +15,23 @@ h1{
     font-size:80px;
     font-family: 'Aldrich', 'sans-serif';
     /* border: 2px solid rgb(100,100,255,0.2); */
-    animation: enter 3s ease-in 1;
+    /* animation: enter 3s ease-in 1; */
     animation: glow 2s ease-in-out infinite alternate;
 }
 
+.box {
+    padding:25px;
+    background:  repeating-linear-gradient( #e1ebff, #8fb6ff );
+    margin:auto;
+    max-width:1000px;
+    border-radius:15px;
+    border: #1f6eff55 solid 4px;
+}
+
+.boxtext :hover{
+    background: #1f6eff55 ;
+}
+/* 
 @keyframes enter {
     from {
         opacity: 0%;
@@ -27,7 +40,7 @@ h1{
     to{
         opacity: 100%;
     }
-}
+} */
 
 
 @keyframes glow {
