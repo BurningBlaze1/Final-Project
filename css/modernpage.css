@@ -63,7 +63,7 @@ body{
  background-image: url("../images/sky.png"), url("../images/sky_43.png");
   background-repeat: no-repeat;
  background-color: white;
-  background-size: 100vw 160vw;
+  background-size: 100vw 100vw;
 background-attachment: fixed;
  position: relative;
 }
@@ -124,6 +124,65 @@ border-radius: 20px;
 opacity:1;
 }
 
+.mboxbigs {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
+text-align: center;
+ background-image: linear-gradient(white, #bababa);
+border-color: white;
+border-style: outset;
+border-width: 1.2vw;
+margin-left: 9vw;
+margin-right: 9vw;
+margin-top: 700px;
+outline: 3px groove black;
+border-radius: 20px;
+opacity:1;
+}
+
+.bborder{
+left: -100px;
+border-style: outset;
+border-width: 1.2vw;
+margin-left: 7vw;
+margin-right: 7vw;
+outline: 3px groove black;
+border-radius: 20px;
+border-color: #0043bf;
+    top: 3550px; 
+    left: 630px; 
+    position: absolute; 
+    z-index: 9999; 
+}
+
+.tborder{
+left: -100px;
+border-style: outset;
+border-width: 1.2vw;
+margin-left: 7vw;
+margin-right: 7vw;
+outline: 3px groove black;
+border-radius: 20px;
+border-color: #0043bf;
+    top: 4750px; 
+    left: 500px; 
+    position: absolute; 
+    z-index: 9999; 
+}
+
+.sborder{
+left: -100px;
+border-style: outset;
+border-width: 1.2vw;
+margin-left: 7vw;
+margin-right: 7vw;
+outline: 3px groove black;
+border-radius: 20px;
+border-color: #0043bf;
+    top: 6750px; 
+    left: 300px; 
+    position: absolute; 
+    z-index: 9999; 
+}
 .mbox {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
 text-align: center;
@@ -135,6 +194,25 @@ outline: 3px groove black;
 width: 35vw;
 height: 30vw;
 margin: 3vw;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.9em;
+color: #0043bf;
+}
+.mboxc {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
+text-align: center;
+background-color: #ededed;
+border-color: white;
+border-style: outset;
+border-width: 10px;
+outline: 3px groove black;
+width: 35vw;
+height: 30vw;
+margin: 3vw;
+margin-left: 300px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.9em;
+color: #0043bf;
 }
 
 .city {
@@ -209,6 +287,13 @@ margin-top: 50px;
   animation: ink 2s forwards;
 }
 
+.animate-gal{
+  animation: gal 2s forwards;
+}
+.animate-hyd{
+  animation: hyd 2s forwards;
+}
+
 @keyframes mario {
   0% {
    left: -700%;
@@ -230,6 +315,27 @@ margin-top: 50px;
     opacity: 1;
   }
 }
+@keyframes gal {
+  0% {
+   left: -1000px;
+    opacity: 0;
+  }
+  100% {
+    left: 5px;
+    opacity: 1;
+  }
+}
+
+@keyframes hyd {
+  0% {
+    left: 1400px;
+    opacity: 0;
+  }
+  100% {
+    left: 1000px; 
+    opacity: 1;
+  }
+}
 
 .gamebg {
   position: absolute;
@@ -242,6 +348,19 @@ margin-top: 50px;
 outline: 3px groove black;
 border-radius: 20px;
 }
+
+#three.gamebg {
+  position: absolute;
+  top: 1000;
+  left: 0;
+  height: 80vw;
+  width: 100vw;
+  z-index: -2;
+object-fit: cover;
+outline: 3px groove black;
+border-radius: 20px;
+}
+
 
 //.visible-gamebg {
   opacity: 1;
@@ -306,10 +425,18 @@ width: 80vw;
 
 .grad{
 height:10vw;
-width: 200vw;
+width: 100vw;
 border: 20px;
-  z-index: -1;
+  z-index: -3;
 background: linear-gradient(to bottom, rgba(14,0,255,0) 0%, rgba(0,0,255,1) 53%, rgba(0,212,255,0) 100%);
+}
+
+.gradb{
+height:10vw;
+width: 100vw;
+border: 20px;
+background-color:black;
+  z-index: -3;
 }
 
 
@@ -351,3 +478,76 @@ background: linear-gradient(to bottom, rgba(14,0,255,0) 0%, rgba(0,0,255,1) 53%,
   animation: jump 1s ease-in-out; 
 
 }
+
+.base{
+width: 40vw;
+height: 40vw;
+position: absolute;
+  top: 500px;  
+  left: 900px;
+z-index:3;
+}
+
+.base2{
+width: 44vw;
+height: 30vw;
+position: absolute;
+  top: 700px;  
+  left: 0px;
+z-index:3;
+}
+
+.stable {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.std {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.str:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.difficult{
+height: 30px;
+width: 30px;
+float: left;
+}
+
+.three{
+width: 90vw;
+height: 55vw;
+position: absolute;
+  top: 5100px;  
+  left: 100px;
+z-index:3;
+
+}
+
+.gal{
+height: 500px;
+width: 500px;
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 5700px;
+  z-index: 9999;
+}
+
+
+.hyd {
+height: 500px;
+width: 500px;
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 5800px;
+  z-index: 9999;
+}
+
+
