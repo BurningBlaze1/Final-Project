@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
 body{
-    background-color: #e6f7f5;
+    background-color: whitesmoke;
  
-    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #e6f7f5 34px ), repeating-linear-gradient( #1f6eff55, #1f6eff );
+    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, whitesmoke 34px ), repeating-linear-gradient( #1f6eff55, #1f6eff );
     margin-bottom:200px;
     animation: bg 30s linear infinite alternate;
 }
@@ -26,10 +26,14 @@ h1{
     max-width:1000px;
     border-radius:15px;
     border: #1f6eff55 solid 4px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.231);
 }
 
 .boxtext :hover{
     background: #1f6eff55 ;
+    cursor:pointer;
+    font-size:120%;
+    transition: background-color 0.3s;
 }
 /* 
 @keyframes enter {
@@ -45,9 +49,11 @@ h1{
 
 @keyframes glow {
     from {
-      text-shadow: 0 0 40px #1f6eff55;
+      text-shadow: 0 0 10px white;
+      /* color:rgb(255, 255, 255) */
     }
     to {
-      text-shadow: 0 0 50px white, 0 0 20px white;
+      text-shadow: 0 0 40px white, 0 0 20px white ;
+      /* color:rgb(0, 0, 0) */
     }
   }
