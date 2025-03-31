@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+ background-color: #423d61;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.creditstable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.creditstable td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.right{
+ box-shadow: 0 0.4em 0.8em rgba(0, 0, 0, 0.2), 0 0.6em 2em black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+object-fit: fill;
+  border-color: white;
+  border-style: outset;
+  border-width: 1vh;
+width: 40vw;
+ background-color: white;
+
+}
+
+.left{
+ box-shadow: 0 0.4em 0.8em rgba(0, 0, 0, 0.2), 0 0.6em 2em black;
+    display: flex;
+    flex-direction: column;
+    border: solid 1vh yellow;
+    align-items: center;
+  background-image: url('../images/bg1.png');
+object-fit: fill;
+width: 40vw;
+ color: white;
+ background-color: black;
+}
+
+.right img, .left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.starl {
+    width: 20px;
+    height: 20px;
+  float: left;
+}
+.starr {
+    width: 20px;
+    height: 20px;
+  float: right;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.borderb{
+  border-color: #0043bf;
+  border-style: outset;
+ border-width: 1.2vw;
+}
+
+.borderj{
+  border-color: yellow;
+  border-width: 1.2vw;
+  border-style: outset;
+ border-radius: 2em;
+}
+
+@media (max-width: 768px) {
+    .creditstable {
+        width: 100%;
+    }
+
+    .creditstable td {
+        padding: 10px;
+    }
+
+    .right, .left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nava {
+        font-size: 1em;
+    }
+
+    .right img, .left img {
+        max-width: 90%;
+    }
+
+    .starl, .starr {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nava {
+        font-size: 0.9em;
+    }
+
+    .creditstable td {
+        display: block;
+        width: 100%;
+    }
+
+    .right, .left {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .starl, .starr {
+        width: 12px;
+        height: 12px;
+    }
+}
+
