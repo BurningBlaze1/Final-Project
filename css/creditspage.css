@@ -73,7 +73,7 @@ width: 40vw;
   border-color: #0043bf;
   border-style: outset;
  border-width: 1.2vw;
-        height: 500vh;
+        height: 50vh;
 }
 
 .borderj{
@@ -81,7 +81,7 @@ width: 40vw;
   border-width: 1.2vw;
   border-style: outset;
  border-radius: 2em;
-        height: 500vh;
+        height: 50vh;
 }
 
 @media (max-width: 768px) {
