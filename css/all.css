@@ -5,6 +5,8 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border-radius: 4px;
+/* I just moved the border radius from the hover state to here as it was recommended */
 }
 
 .nava {
@@ -20,7 +22,7 @@ nav {
 .nava:hover {
   color: #d0b5ff;
   background-color: #555555;
-  border-radius: 4px;
+
   transition: background-color 0.3s ease;
 }
 
