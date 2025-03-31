@@ -13,7 +13,7 @@ body {
 
     background-color: var(--bgcolor);
     background-image: url('../images/bg1.png');
-    
+
     background-size: 500px;
     background-repeat: repeat;
 }
@@ -21,38 +21,38 @@ body {
 nav {
     font-family: 'Jersey 15', 'sans-serif';
     background-image: linear-gradient(var(--primarycolor), var(--bgcolor));
-     text-align: center;
-     gap:100px;
-   border-color: var(--textcolor2);
+    text-align: center;
+    gap: 100px;
+    border-color: var(--textcolor2);
     border-bottom: var(--textcolor2) solid 5px;
-   }
-   
-   .nava {
-     font-size:50px;
-   }
-   
-   .nava:hover {
-     color: var(--textcolor2);
-   }
-   
-   @media screen and (max-width: 768px) {
-     .nava {
-       font-size: 14px;
-       padding: 8px 16px;
-     }
-   }
-   
-   @media screen and (max-width: 480px) {
-     nav {
-       flex-direction: column;
-       align-items: center;
-       padding: 15px;
-     }
-   
-     .nava {
-       margin: 5px 0;
-     }
-   }
+}
+
+.nava {
+    font-size: 50px;
+}
+
+.nava:hover {
+    color: var(--textcolor2);
+}
+
+@media screen and (max-width: 768px) {
+    .nava {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .nava {
+        margin: 5px 0;
+    }
+}
 
 p {
     color: var(--textcolor);
@@ -61,8 +61,8 @@ p {
     text-align: center;
 }
 
-.gametext{
-    font-size:30px;
+.gametext {
+    font-size: 30px;
 }
 
 footer {
@@ -88,8 +88,8 @@ h1 {
     /* max-width: fit-content;
     border: solid .5vh yellow; */
 
-    margin:auto;
-    margin-top:50px;
+    margin: auto;
+    margin-top: 50px;
     text-align: center;
     position: relative;
     letter-spacing: 7px;
@@ -97,26 +97,29 @@ h1 {
     border-right: 4px solid var(--textcolor2);
     white-space: nowrap;
     animation: typewriter 3s steps(24) 1s 1 normal both,
-    blinkTextCursor 500ms infinite;
+        blinkTextCursor 500ms infinite;
 }
 
-  @keyframes typewriter {
+@keyframes typewriter {
     from {
-      width: 0;
+        width: 0;
     }
+
     to {
-      width: 710px;
-      /* width: 50vw; */
+        width: 710px;
+        /* width: 50vw; */
     }
-  }
-  @keyframes blinkTextCursor {
+}
+
+@keyframes blinkTextCursor {
     from {
-      border-right-color: var(--textcolor2)(0, 0%, 80%);
+        border-right-color: var(--textcolor2)(0, 0%, 80%);
     }
+
     to {
-      border-right-color: transparent;
+        border-right-color: transparent;
     }
-  }
+}
 
 h2 {
     color: var(--textcolor);
@@ -156,7 +159,7 @@ h2 {
 }
 
 .gamestogoover {
-    margin:auto;
+    margin: auto;
     background-color: var(--primarycolor);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -171,8 +174,8 @@ h2 {
     border: solid .5vh yellow;
 }
 
-.gamestogoover>image{
-    margin:auto;
+.gamestogoover>image {
+    margin: auto;
 }
 
 .gamestogoover>h2 {
@@ -199,7 +202,7 @@ h2 {
     margin-bottom: 100px;
     position: relative;
     overflow-x: hidden;
-}  
+}
 
 .gamesection>.gamename {
     font-size: 60px;
@@ -216,7 +219,7 @@ h2 {
 }
 
 .gameimage {
-    margin:auto;
+    margin: auto;
     min-height: 300px;
     object-fit: cover;
     border: solid .5vh yellow;
@@ -229,7 +232,7 @@ h2 {
     background-color: var(--bgcolor);
     border: solid .25vh yellow;
     box-shadow: 0px 10px rgb(255, 255, 0, .25);
-    padding:10px;
+    padding: 10px;
 }
 
 .mechanicsgrid {
@@ -244,18 +247,18 @@ h2 {
     border: solid .5vh yellow;
 }
 
-.mechanicsection img{
-    margin:auto;
-    height : 300px;
-    object-fit:cover;
+.mechanicsection img {
+    margin: auto;
+    height: 300px;
+    object-fit: cover;
 }
 
 .carousel {
-    margin:auto;
+    margin: auto;
     object-fit: cover;
     position: relative;
     height: 608px;
-    max-width:1200px;
+    max-width: 1200px;
     margin-top: 40px;
     margin-bottom: 40px;
     border: solid .5vh yellow;
@@ -271,11 +274,11 @@ h2 {
 }
 
 .koncarousel {
-    margin:auto;
+    margin: auto;
     object-fit: cover;
     position: relative;
     height: 608px;
-    max-width:1200px;
+    max-width: 1200px;
     margin-top: 40px;
     margin-bottom: 40px;
     border: solid .5vh yellow;
@@ -293,8 +296,8 @@ h2 {
     z-index: 1;
 }
 
-.button1{
-    z-index:100;
+.button1 {
+    z-index: 100;
     background: url(/images/donkeykongcover.jpg) no-repeat;
 }
 
@@ -304,28 +307,28 @@ h2 {
     background:url("/images/konoutfitcoat.webp") no-repeat;
 } */
 
-.carouselimg3test image{
-position:absolute
+.carouselimg3test image {
+    position: absolute
 }
 
-.carouselimg3test2 image{
-    position:absolute
-    }
+.carouselimg3test2 image {
+    position: absolute
+}
 
 .hidden {
     opacity: 0;
     pointer-events: none;
 }
 
-.konanimation1{
+.konanimation1 {
     animation: curtains 3s ease-in-out infinite alternate;
 }
 
-.konanimation2{
-animation: curtains2 3s ease-in-out infinite alternate;
+.konanimation2 {
+    animation: curtains2 3s ease-in-out infinite alternate;
 }
 
-.gamestogooverline{
+.gamestogooverline {
     background-color: white;
     height: 4px;
     max-width: 650px;
@@ -333,15 +336,14 @@ animation: curtains2 3s ease-in-out infinite alternate;
 }
 
 .separator {
-    background: linear-gradient(90deg, 
-        rgb(221, 254, 4), 
-        rgb(94, 255, 0) 47%, 
-        /* white 49%,
+    background: linear-gradient(90deg,
+            rgb(221, 254, 4),
+            rgb(94, 255, 0) 47%,
+            /* white 49%,
         white 51%, */
-        rgb(0, 255, 255) 53%,
-        rgba(25, 0, 255, 0.5) 100%
-    );
-    
+            rgb(0, 255, 255) 53%,
+            rgba(25, 0, 255, 0.5) 100%);
+
     background-size: 200% 100%;
 
     height: 5px;
@@ -361,22 +363,22 @@ animation: curtains2 3s ease-in-out infinite alternate;
     }
 }
 
-.curtain{
-    margin:auto;
-    position:absolute;
-    width:50%;
-    height:100%;
+.curtain {
+    margin: auto;
+    position: absolute;
+    width: 50%;
+    height: 100%;
     z-index: 10;
-    left:-50%;
+    left: -50%;
 }
 
-.curtain2{
-    margin:auto;
-    position:absolute;
-    width:50%;
-    height:100%;
+.curtain2 {
+    margin: auto;
+    position: absolute;
+    width: 50%;
+    height: 100%;
     z-index: 10;
-    right:-50%;
+    right: -50%;
 }
 
 /* Code I was suggested didn't work so I had to improvise */
@@ -391,21 +393,21 @@ animation: curtains2 3s ease-in-out infinite alternate;
 @keyframes curtain {
     to {
         left: 0%;
-     }
+    }
 }
 
 @keyframes curtains2 {
     to {
-       right: 0%;
+        right: 0%;
     }
 }
 
 .disabled {
-pointer-events: none;
+    pointer-events: none;
 }
 
-.koncarousel_wrapper{
-    position:relative;
+.koncarousel_wrapper {
+    position: relative;
 }
 
 .grass {
@@ -450,11 +452,11 @@ pointer-events: none;
     }
 }
 
-.sonic{
-    max-width:7em;
-    position:absolute;
+.sonic {
+    max-width: 7em;
+    position: absolute;
     left: 30%;
-    bottom:31%;
+    bottom: 31%;
     height: 23%;
     /* animation: sonicrun 7s  linear 1; */
 }
@@ -469,59 +471,61 @@ pointer-events: none;
     }
 } */
 
-.sonicbox{
-    position:relative;
-    overflow:hidden;
-    
+.sonicbox {
+    position: relative;
+    overflow: hidden;
+
 }
 
 .konbutton {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:120px;
+    gap: 120px;
 }
 
-.konbutton button{
-    margin:auto;
-    width:150px;
-    height:150px;
+.konbutton button {
+    margin: auto;
+    width: 150px;
+    height: 150px;
     background-color: rgb(157, 157, 40);
 }
 
-.konbutton button:hover{
-    cursor:pointer;
-    .material-symbols-outlined{
+.konbutton button:hover {
+    cursor: pointer;
+
+    .material-symbols-outlined {
         color: var(--bgcolor);
     }
+
     background-color: var(--textcolor2);
 }
 
-.carousel3{
-z-index:-10;
+.carousel3 {
+    z-index: -10;
 }
 
-.material-symbols-outlined{
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24;
-  color: var(--primarycolor)
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    color: var(--primarycolor)
 }
 
-.titlegamelabel{
-    margin-top:100px;
+.titlegamelabel {
+    margin-top: 100px;
     font-size: 45px;
-color: var(--textcolor2)
+    color: var(--textcolor2)
 }
 
-.returntomenu{
+.returntomenu {
     margin-bottom: 100px;
 }
 
-.returntomenu > p{
-    color:yellow;
+.returntomenu>p {
+    color: yellow;
 }
 
 
@@ -540,38 +544,38 @@ color: var(--textcolor2)
         font-size: 60px;
     }
 
-    .gamedesc{
-        font-size:30px;
-        margin-bottom:0;
+    .gamedesc {
+        font-size: 30px;
+        margin-bottom: 0;
     }
 
-    p{
-        font-size:30px;
+    p {
+        font-size: 30px;
     }
 
-    h2{
-        font-size:35px;
+    h2 {
+        font-size: 35px;
     }
 
 }
 
 @media screen and (width <=980px) {
     .konbutton {
-        gap:50px;
+        gap: 50px;
     }
 }
 
 @media screen and (width <=700px) {
 
-    h1{
+    h1 {
         font-size: 40px;
-        margin-left:40px;
+        margin-left: 40px;
     }
 
     .konbutton {
         grid-template-columns: 1fr 1fr;
-        margin-left:none;
-        margin-right:none;
+        margin-left: none;
+        margin-right: none;
     }
 
     .gamestogoover {
@@ -603,7 +607,7 @@ color: var(--textcolor2)
         height: 300px;
     }
 
-    .qbert{
+    .qbert {
         height: 50vh;
     }
 
@@ -615,16 +619,16 @@ color: var(--textcolor2)
         display: grid;
         align-content: center;
         grid-template-columns: 1fr 1fr;
-        gap:50px;
-    }
-    
-    .konbutton button{
-        margin:auto;
-        width:150px;
-        height:150px;
+        gap: 50px;
     }
 
-    .qbert{
+    .konbutton button {
+        margin: auto;
+        width: 150px;
+        height: 150px;
+    }
+
+    .qbert {
         height: 35vh;
     }
 }

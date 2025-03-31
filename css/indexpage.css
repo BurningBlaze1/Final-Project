@@ -7,83 +7,84 @@
 font-size: 30px;
 } */
 
-.mainstuff{
-margin:auto;
-margin-top:130px;
-margin-bottom:150px;
-padding:95.5px;
+.mainstuff {
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 150px;
+    padding: 95.5px;
 }
 
-body{
+body {
     background-color: whitesmoke;
- 
-    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, whitesmoke 34px ), repeating-linear-gradient( #1f6eff55, #1f6eff );
-    margin-bottom:211px;
+
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, whitesmoke 34px), repeating-linear-gradient(#1f6eff55, #1f6eff);
+    margin-bottom: 211px;
     animation: bg 30s linear infinite alternate;
 }
 
-.saves{
-    margin:none;
+.saves {
+    margin: none;
     font-size: 28px;
-    color:rgb(69, 69, 69);
+    color: rgb(69, 69, 69);
     text-decoration: none;
 }
 
-h1{
+h1 {
     /* Im trying to figure out how to put this gradient on the text */
- 
+
     /* opacity:0%; */
     text-align: center;
-    margin:auto;
-    margin-bottom:50px;
-    font-size:80px;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 80px;
     font-family: 'Aldrich', 'sans-serif';
     /* border: 2px solid rgb(100,100,255,0.2); */
     animation: enter 2s ease-in 1 both, glow 2s ease-in-out infinite alternate;
 }
 
 .box {
-    padding:25px;
-    background:  repeating-linear-gradient( #e1ebff, #8fb6ff );
-    margin:auto;
-    max-width:1000px;
-    border-radius:15px;
+    padding: 25px;
+    background: repeating-linear-gradient(#e1ebff, #8fb6ff);
+    margin: auto;
+    max-width: 1000px;
+    border-radius: 15px;
     border: #1f6eff55 solid 4px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.231);
-    font-size:150%;
+    font-size: 150%;
 }
 
-.boxtext :hover{
+.boxtext :hover {
     background: #1f6eff55;
     /* I want the background colour to span across all the way to the right of the box, but I can't get it to work */
-    cursor:pointer;
-    font-size:120%;
+    cursor: pointer;
+    font-size: 120%;
     transition: background-color 0.3s;
     overflow-clip-margin: content-box;
     overflow: clip;
-    color:black;
+    color: black;
 }
 
 @keyframes enter {
     from {
         opacity: 0%;
-        transform:translate(0px,-600px);
+        transform: translate(0px, -600px);
     }
 
-    to{
+    to {
         opacity: 100%;
-        transform:translate(0px,0px)
+        transform: translate(0px, 0px)
     }
 }
 
 
 @keyframes glow {
     from {
-      text-shadow: 0 0 10px white;
-      /* color:rgb(255, 255, 255) */
+        text-shadow: 0 0 10px white;
+        /* color:rgb(255, 255, 255) */
     }
+
     to {
-      text-shadow: 0 0 40px white, 0 0 20px white ;
-      /* color:rgb(0, 0, 0) */
+        text-shadow: 0 0 40px white, 0 0 20px white;
+        /* color:rgb(0, 0, 0) */
     }
-  }
+}
