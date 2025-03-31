@@ -2,6 +2,11 @@
 
 /* I need help overall making this less ugly */
 
+
+/* .nava{
+font-size: 30px;
+} */
+
 .mainstuff{
 margin:auto;
 margin-top:130px;
@@ -13,7 +18,7 @@ body{
     background-color: whitesmoke;
  
     background-image: repeating-radial-gradient( circle at 0 0, transparent 0, whitesmoke 34px ), repeating-linear-gradient( #1f6eff55, #1f6eff );
-    margin-bottom:200px;
+    margin-bottom:211px;
     animation: bg 30s linear infinite alternate;
 }
 
@@ -25,7 +30,7 @@ body{
 }
 
 h1{
-    background-image: linear-gradient(45deg, red, yellow, blue);
+    /* background-image: linear-gradient(45deg, red, yellow, blue); */
     /* Im trying to figure out how to put this gradient on the text */
 
     /* opacity:0%; */
@@ -83,5 +88,3 @@ h1{
       /* color:rgb(0, 0, 0) */
     }
   }
-
-  .save1:onclic
