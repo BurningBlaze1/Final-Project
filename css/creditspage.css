@@ -29,6 +29,7 @@ object-fit: fill;
   border-style: outset;
   border-width: 1vh;
 width: 40vw;
+    margin-left:70px;
  background-color: white;
 
 }
@@ -72,6 +73,7 @@ width: 40vw;
   border-color: #0043bf;
   border-style: outset;
  border-width: 1.2vw;
+        height: 50vh;
 }
 
 .borderj{
@@ -79,6 +81,7 @@ width: 40vw;
   border-width: 1.2vw;
   border-style: outset;
  border-radius: 2em;
+        height: 50vh;
 }
 
 @media (max-width: 768px) {
