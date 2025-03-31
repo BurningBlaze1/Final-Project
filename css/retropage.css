@@ -13,6 +13,7 @@ body {
 
     background-color: var(--bgcolor);
     background-image: url('../images/bg1.png');
+    
     background-size: 500px;
     background-repeat: repeat;
 }
@@ -355,36 +356,11 @@ animation: curtains2 3s ease-in-out infinite alternate;
     }
 }
 
-.curtainsTransition > .curtain {
-    .curtain{
-    animation: curtains 3s ease-in-out 2 alternate;
-    }
-}
-
-.curtainsTransition > .curtain2 {
-    .curtain2{
-    animation: curtains2 3s ease-in-out 2 alternate;
-    }
-}
-
-@keyframes curtains {
-    to {
-        left:0%;
-     }
-}
-
-@keyframes curtains2 {
-    to {
-       right:0%;
-    }
-}
-
 .curtain{
     margin:auto;
     position:absolute;
     width:50%;
     height:100%;
-    /* transform: translate(500px, 40px); */
     z-index: 10;
     left:-50%;
 }
@@ -394,11 +370,34 @@ animation: curtains2 3s ease-in-out infinite alternate;
     position:absolute;
     width:50%;
     height:100%;
-    /* transform: translate(-1000px, 40px); */
     z-index: 10;
     right:-50%;
 }
 
+/* Code I was suggested didn't work so I had to improvise */
+.curtainsTransition {
+    animation: curtain 3s ease-in-out 2 alternate;
+}
+
+.curtainsTransition2 {
+    animation: curtains2 3s ease-in-out 2 alternate;
+}
+
+@keyframes curtain {
+    to {
+        left: 0%;
+     }
+}
+
+@keyframes curtains2 {
+    to {
+       right: 0%;
+    }
+}
+
+.disabled {
+pointer-events: none;
+}
 
 .koncarousel_wrapper{
     position:relative;
