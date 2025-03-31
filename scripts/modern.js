@@ -1,4 +1,3 @@
-// Intersection Observer for the first animation (Mario, Ink, Game Background)
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -11,7 +10,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       inkElement.classList.add('animate-ink');
       gamebg.classList.add('visible-gamebg');
       
-      observer.unobserve(entry.target); // Stop observing once the effect is applied
+      observer.unobserve(entry.target); 
     } else {
       const gamebg = document.getElementById('mkbg');
       gamebg.classList.remove('visible-gamebg');
@@ -23,8 +22,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 const detectorElement = document.getElementById('detector1');
 observer.observe(detectorElement);
 
-
-// Mouse Movement for Eye Element
 const container = document.querySelector('.eyecont');
 const image = document.querySelector('.eye');
 let prevX = 0;
@@ -35,22 +32,17 @@ container.addEventListener('mousemove', (event) => {
   const mouseX = event.clientX - containerRect.left;
   const mouseY = event.clientY - containerRect.top;
   
-  // Calculate the angle to rotate the eye image
   const angle = Math.atan2(mouseY - prevY, mouseX - prevX); 
   const angleDeg = angle * (180 / Math.PI) - 90; 
 
-  // Position the image and apply the rotation
   image.style.left = `${mouseX - image.width / 2}px`; 
   image.style.top = `${mouseY - image.height / 2}px`;  
   image.style.transform = `rotate(${angleDeg}deg)`; 
 
-  // Update previous mouse position
   prevX = mouseX;
   prevY = mouseY;
 });
 
-
-// Buny Animation (Moves and Jumps)
 const buny = document.querySelector('.bunyop');
 let moves = 0;
 
@@ -66,26 +58,23 @@ function move() {
   } else {
     buny.style.animation = 'jump 1s ease-in-out';
     
-    // Hide the element after the animation ends
     buny.addEventListener('animationend', () => {
       buny.style.display = 'none';
     });
   }
 }
 
-// Intersection Observer for Buny Movement
 const moveObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       move();
-      observer.unobserve(entry.target); // Stop observing once move starts
+      observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.5 });
 
 const detector2 = document.getElementById('detector2');
 moveObserver.observe(detector2);
-
 
 const inkObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
@@ -106,3 +95,35 @@ const inkObserver = new IntersectionObserver((entries, observer) => {
 
 const detectorThreeElement = document.getElementById('detectorthree');
 inkObserver.observe(detectorThreeElement);
+
+const box = document.getElementById('splatbox');
+
+const splatImages = [
+  'images/modern/splat/1.png',
+  'images/modern/splat/2.png',
+  'images/modern/splat/3.png',
+  'images/modern/splat/4.png',
+  'images/modern/splat/5.png',
+  'images/modern/splat/6.png',
+];
+
+function addSplat(event) {
+  const boxRect = box.getBoundingClientRect();
+  const mouseX = event.clientX - boxRect.left - 100; 
+  const mouseY = event.clientY - boxRect.top - 300;  
+
+  const splat = document.createElement('img');
+
+  const randomIndex = Math.floor(Math.random() * splatImages.length);
+  splat.src = splatImages[randomIndex];
+
+  splat.alt = 'splat';
+  splat.classList.add('splat');
+
+  splat.style.left = `${mouseX}px`; 
+  splat.style.top = `${mouseY + 5500}px`;
+
+  box.appendChild(splat);
+}
+
+box.addEventListener('click', addSplat); 
