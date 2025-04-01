@@ -35,8 +35,8 @@ container.addEventListener('mousemove', (event) => {
   const angle = Math.atan2(mouseY - prevY, mouseX - prevX); 
   const angleDeg = angle * (180 / Math.PI) - 90; 
 
-  image.style.left = `${mouseX - image.width / 2}px`; 
-  image.style.top = `${mouseY - image.height / 2}px`;  
+  image.style.left = `${mouseX - image.width / 2 - 120}px`; 
+  image.style.top = `${mouseY - image.height / 2 - 50}px`;  
   image.style.transform = `rotate(${angleDeg}deg)`; 
 
   prevX = mouseX;
@@ -47,7 +47,7 @@ const buny = document.querySelector('.bunyop');
 let moves = 0;
 
 function move() {
-  if (moves < 10) {
+  if (moves < 7) {
     moves++;
     const moveLeft = 50 * moves + 120;
     
@@ -109,8 +109,8 @@ const splatImages = [
 
 function addSplat(event) {
   const boxRect = box.getBoundingClientRect();
-  const mouseX = event.clientX - boxRect.left - 100; 
-  const mouseY = event.clientY - boxRect.top - 300;  
+  const mouseX = event.clientX - boxRect.left; 
+  const mouseY = event.clientY - boxRect.top;  
 
   const splat = document.createElement('img');
 
@@ -120,8 +120,8 @@ function addSplat(event) {
   splat.alt = 'splat';
   splat.classList.add('splat');
 
-  splat.style.left = `${mouseX}px`; 
-  splat.style.top = `${mouseY + 5500}px`;
+  splat.style.left = `${mouseX - 110}px`; 
+  splat.style.top = `${mouseY - 130}px`;
 
   box.appendChild(splat);
 }
