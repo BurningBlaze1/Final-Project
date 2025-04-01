@@ -37,7 +37,6 @@ nav {
 
 @media screen and (max-width: 768px) {
     .nava {
-        font-size: 14px;
         padding: 8px 16px;
     }
 }
@@ -559,6 +558,15 @@ h2 {
 
 }
 
+
+@media screen and (width <=1080px) {
+    nav{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:0px;
+    }
+}
+
 @media screen and (width <=980px) {
     .konbutton {
         gap: 50px;
@@ -611,6 +619,10 @@ h2 {
         height: 50vh;
     }
 
+    .nava {
+        font-size: 40px;
+    }
+
 }
 
 @media screen and (width <=560px) {
@@ -630,5 +642,28 @@ h2 {
 
     .qbert {
         height: 35vh;
+    }
+    
+    .nava {
+        font-size: 30px;
+    }
+
+    nav{
+        gap:0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (width <=440px) {
+    nav{
+        gap:0px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (width <=230px) {
+    nav{
+        gap:0px;
+        grid-template-columns: 1fr;
     }
 }

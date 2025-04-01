@@ -88,3 +88,71 @@ h1 {
         /* color:rgb(0, 0, 0) */
     }
 }
+
+@media screen and (width <=560px) {
+    
+.mainstuff {
+        padding: 10px;
+    }
+    
+h1 {
+    font-size: 60px;
+}
+
+.saves {
+    font-size: 24px;
+}
+
+.boxtext :hover {
+    font-size: 26px;
+}
+
+}
+
+@media screen and (width <=328px) {
+    
+    .mainstuff {
+            padding: 10px;
+        }
+        
+    h1 {
+        font-size: 45px;
+    }
+
+    h2{
+        font-size:25px;
+    }
+    
+    .saves {
+        font-size: 20px;
+    }
+    
+    .boxtext :hover {
+        font-size: 22px;
+    }
+    
+    }
+
+    @media screen and (width <=252px) {
+    
+        .mainstuff {
+                padding: 0px;
+            }
+            
+        h1 {
+            font-size: 30px;
+        }
+    
+        h2{
+            font-size:20px;
+        }
+        
+        .saves {
+            font-size: 15px;
+        }
+        
+        .boxtext :hover {
+            font-size: 17px;
+        }
+        
+        }
